@@ -37,6 +37,7 @@ body{
     justify-items: center;
     align-items: center;
     grid-gap: 7%;
+    cursor: pointer;
 }
 .line{
     border-top: 1px solid white;
@@ -58,7 +59,28 @@ body{
 .footer{
     background-color:  white;
     position: sticky;
+    font-family: 'Overlock', cursive;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ::-webkit-scrollbar{
     width: 1px;
 }
+
+
+@media(max-width: 1100px){
+   #container{
+       grid-template-columns: 2fr 6fr;
+   }
+}
+
+@media(max-width: 780px){
+    #container{
+        grid-template-columns: 3fr 7fr;
+    }
+}
+
+
